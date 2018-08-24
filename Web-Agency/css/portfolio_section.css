@@ -111,16 +111,6 @@
 }
 /* THUMBNAIL THUMBNAIL THUMBNAIL THUMBNAIL THUMBNAIL THUMBNAIL THUMBNAIL THUMBNAIL END*/
 
-@media all and (max-width: 820px){
-  .section-header{
-    margin-left: 2%;
-    margin-right: 2%;
-  }
-  .portfolio{
-    justify-content: space-around;
-  }
-}
-
 @media all and (min-width: 1380px){
   .thumbnail{
     width: 320px;

@@ -1,7 +1,7 @@
 /*@media all and (min-width: 1600px)*/
 
 body{
-  font-size: xx-large;
+  font-size: large;
 }
 
 h2{
@@ -19,11 +19,11 @@ section{
 
 /*FOOTER*/
 #contact{
-  width: 500px;
+  width: 400px;
 }
 
 .responsive-map iframe{
-  height: 900px;
+  height: 100vh;
 }
 
 .input{
@@ -33,7 +33,7 @@ section{
 }
 /*HEADER*/
 .slidertext h1{
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .slidertext a{
@@ -53,18 +53,18 @@ section{
 
 @media all and (min-width: 1800px){
   .thumbnail{
-    width: 480px;
+    width: 420px;
   }
 
   .descr span{
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .portfolio-tabs button{
-    font-size: x-large;
+    font-size: large;
   }
 
   .portfolio-tabs button:focus i{
-    bottom: -30px;
+    bottom: -24px;
   }
 }

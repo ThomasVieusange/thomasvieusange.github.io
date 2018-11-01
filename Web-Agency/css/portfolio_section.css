@@ -64,7 +64,7 @@
 }
 /* THUMBNAIL THUMBNAIL THUMBNAIL THUMBNAIL THUMBNAIL THUMBNAIL THUMBNAIL THUMBNAIL */
 .thumbnail{
-  width: 240px;
+  width: 220px;
   height: auto;
   margin: 16px 0;
   position: relative;
@@ -113,6 +113,6 @@
 
 @media all and (min-width: 1380px){
   .thumbnail{
-    width: 320px;
+    width: 280px;
   }
 }

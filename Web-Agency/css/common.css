@@ -82,3 +82,23 @@ label{
   margin-bottom: 0;
   padding: 12px 0px 12px 0px;
 }
+
+.bandeau-oc{
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 8px;
+  background-color: orange;
+}
+
+.bandeau-oc p{
+  color: black;
+}
+
+.hide{
+  display: none;
+}

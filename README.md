@@ -2,7 +2,7 @@
 
 Web projects showcase:
 
-https://thomasvieusange.github.io/Web-Agency/
-https://codepen.io/Thomas_Vieusange/
+https://thomasvieusange.github.io/Web-Agency/ /n
+https://codepen.io/Thomas_Vieusange/ /n
 http://strasbourgtourisme.thomasvieusange.ovh/
 

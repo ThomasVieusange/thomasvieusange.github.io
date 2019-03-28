@@ -1,5 +1,5 @@
 # thomasvieusange.github.io
 
-Showcase of web projects:
+Web projects showcase:
 
 thomasvieusange.github.io/Web-Agency

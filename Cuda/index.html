@@ -99,7 +99,7 @@
         </div>
         <div class="teammate">
           <div class="profile-pic"></div>
-          <strong>Ben Cunningham</strong>
+          <strong>Gibson Patel</strong>
           <span class="profession">SEO / Developer</span>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <div class="contacts">
@@ -115,7 +115,24 @@
       <h2>We got skills!</h2>
       <div class="line"></div>
       <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
+      <div class="section-container">
+        <div class="skills-item">
+          <div id="chart1" data-percent="90"><span>90%</span></div>
+          <strong>Web Design</strong>
+        </div>
+        <div class="skills-item">
+          <div id="chart2" data-percent="75"><span>75%</span></div>
+          <strong>html / css</strong>
+        </div>
+        <div class="skills-item">
+          <div id="chart3" data-percent="70"><span>70%</span></div>
+          <strong>Graphic Design</strong>
+        </div>
+        <div class="skills-item">
+          <div id="chart4" data-percent="85"><span>85%</span></div>
+          <strong>UI / UX</strong>
+        </div>
+      </div>
     </section>
 
     <section id="portfolio" class="section">
@@ -215,6 +232,49 @@
       <a href="#">Dribbble</a>
       <a href="#">Github</a>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="javascript/jquery.easypiechart.js"></script>
+    <script>
+      $(function(){
+        $('#chart1').easyPieChart({
+            barColor: "#30BAE7",
+            trackColor: "#DFE8ED",
+            scaleColor: false,
+            lineCap: "butt",
+            lineWidth: 13,
+            size: 160,
+            animate: false
+        });
+        $('#chart2').easyPieChart({
+            barColor: "#D74680",
+            trackColor: "#DFE8ED",
+            scaleColor: false,
+            lineCap: "butt",
+            lineWidth: 13,
+            size: 160,
+            animate: false
+        });
+        $('#chart3').easyPieChart({
+            barColor: "#15C7A8",
+            trackColor: "#DFE8ED",
+            scaleColor: false,
+            lineCap: "butt",
+            lineWidth: 13,
+            size: 160,
+            animate: false
+        });
+        $('#chart4').easyPieChart({
+            barColor: "#EB7D4B",
+            trackColor: "#DFE8ED",
+            scaleColor: false,
+            lineCap: "butt",
+            lineWidth: 13,
+            size: 160,
+            animate: false
+        });
+      });
+    </script>
 
   </body>
 </html>

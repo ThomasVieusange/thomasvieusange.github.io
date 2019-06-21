@@ -1,0 +1,128 @@
+.grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 2px;
+  grid-column-gap: 2px;
+  grid-template-areas:
+    "header"
+    "skills"
+    "work"
+    "experience"
+    "about"
+    "footer"
+}
+
+header{
+  grid-area: header;
+  height: 100vh;
+}
+
+#skills{
+  grid-area: skills;
+}
+
+#work{
+  grid-area: work;
+}
+
+#experience{
+  grid-area: experience;
+  ul.experience-content{
+    li.experience-item{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "exp-time-place icon"
+        "exp-panel exp-panel";
+      .experience-time-place{
+        grid-area: exp-time-place;
+      }
+      .experience-panel{
+        grid-area: exp-panel;
+      }
+      .experience-icon{
+        grid-area: icon;
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+
+#about{
+  grid-area: about;
+}
+
+footer{
+  grid-area: footer;
+}
+
+@media screen and (min-width: 626px){
+  .grid{
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "header header"
+        "work experience"
+        "skills about"
+        "footer footer";
+  }
+}
+
+@media screen and (min-width: 769px){
+  .grid{
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas:
+        "header header header"
+        "work experience experience"
+        "skills skills about"
+        "footer footer footer";
+  }
+  #experience{
+    grid-area: experience;
+    ul.experience-content{
+      li.experience-item{
+        display: grid;
+        grid-template-columns: 190px 100px 1fr;
+        grid-template-areas:
+          "exp-time-place icon exp-panel exp-panel";
+        .experience-time-place{
+          grid-area: exp-time-place;
+        }
+        .experience-panel{
+          grid-area: exp-panel;
+        }
+        .experience-icon{
+          grid-area: icon;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1025px){
+  .grid{
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "header"
+        "skills"
+        "work"
+        "experience"
+        "about"
+        "footer";
+  }
+}
+
+@media screen and (min-width: 1441px){
+  .grid{
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "header"
+        "skills"
+        "work"
+        "experience"
+        "about"
+        "footer";
+  }
+}

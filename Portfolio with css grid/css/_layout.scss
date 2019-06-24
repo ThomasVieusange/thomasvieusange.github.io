@@ -82,7 +82,7 @@ footer{
     ul.experience-content{
       li.experience-item{
         display: grid;
-        grid-template-columns: 190px 100px 1fr;
+        grid-template-columns: 25% 100px 1fr;
         grid-template-areas:
           "exp-time-place icon exp-panel exp-panel";
         .experience-time-place{
@@ -101,28 +101,14 @@ footer{
   }
 }
 
-@media screen and (min-width: 1025px){
-  .grid{
-      grid-template-columns: 1fr;
-      grid-template-areas:
-        "header"
-        "skills"
-        "work"
-        "experience"
-        "about"
-        "footer";
-  }
-}
-
 @media screen and (min-width: 1441px){
   .grid{
-      grid-template-columns: 1fr;
+      margin: 0 80px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-areas:
-        "header"
-        "skills"
-        "work"
-        "experience"
-        "about"
-        "footer";
+      "header header header header"
+      "work work experience experience"
+      "skills skills about about"
+      "footer footer footer footer";
   }
 }

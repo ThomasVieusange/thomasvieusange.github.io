@@ -12,7 +12,8 @@
   </head>
   <body>
 
-    <nav>
+    <nav class="hide-nav">
+      <a id="close-nav"><i class="fas fa-times fa-lg"></i></a>
       <a href="#"><i class="fas fa-home fa-lg"></i> Home</a>
       <a href="#"><i class="fas fa-chart-pie fa-lg"></i> Compétences</a>
       <a href="#"><i class="fas fa-briefcase fa-lg"></i> Réalisations</a>
@@ -42,39 +43,61 @@
       </header>
 <!-- I would like to make the web beautiful -->
       <section id="skills">
-        <h2>SKILLSET</h2>
-        <div class="level">
-          <h3>Confiant <i class="far fa-thumbs-up fa-lg"></i></h3>
-          <ul>
-            <li>CSS3 (Flexbox - Grid - SCSS)</li>
-            <li>HTML5</li>
-            <li>Wordpress (Sites Vitrine - Elementor)</li>
-            <li>Cross-Browsers</li>
-            <li>Réferencement naturel</li>
-            <li>Responsive design</li>
-          </ul>
-        </div>
-        <div class="level">
-          <h3>En cours d'acquisition <i class="fas fa-spinner fa-lg"></i></h3>
-          <ul>
-            <li>Javascript (JQuery)</li>
-            <li>Photopea</li>
-            <li>Intégration des maquettes graphiques</li>
-            <li>Mobile First</li>
-          </ul>
+        <h2>COMPÉTENCES</h2>
+        <div class="skills-container">
+          <div class="level">
+            <h3>Confiant <i class="far fa-thumbs-up fa-lg"></i></h3>
+            <ul>
+              <li>CSS3 (Flexbox - Grid - SCSS)</li>
+              <li>HTML5</li>
+              <li>Wordpress (Sites Vitrine - Elementor)</li>
+              <li>Cross-Browsers</li>
+              <li>Réferencement naturel</li>
+              <li>Responsive design</li>
+            </ul>
+          </div>
+          <div class="level">
+            <h3>En cours d'acquisition <i class="fas fa-spinner fa-lg"></i></h3>
+            <ul>
+              <li>Javascript (JQuery)</li>
+              <li>Photopea</li>
+              <li>Intégration des maquettes graphiques</li>
+              <li>Mobile First</li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <section id="work">
-        <h2>WORK</h2>
+        <h2>RÉALISATIONS</h2>
+        <ul class="work-content">
+
+          <li class="work-item">
+            <div class="work-item-thumbnail">
+              <img src="images/thumbnails/webagency.jpg" alt="image miniature du projet WebAgency">
+              <div class="work-item-overlay">
+                <a href="https://thomasvieusange.github.io/Web-Agency/" target="_blank">
+                  <div class="work-panel">
+                    <strong>Web Agency</strong>
+                    <p>Projet réalisé dans le cadre de ma formation sur Openclassrooms.com</p>
+                    <span>HTML5 CSS3 Flexbox</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+
         CodePen (html css js api)
-        web agency (flexbox, openclassrooms projet1)
         cuda (integration - flexbox)
         strasbourg (wordpress)
+
       </section>
 
       <section id="experience">
-        <h2>EXPERIENCE</h2>
+        <h2>EXPÉRIENCE</h2>
+        <a class="download" href="files/CV_DevWeb.pdf" target="_blank" download>Télécharger mon CV</a>
         <ul class="experience-content">
           <li class="experience-item">
             <div class="experience-time-place">
@@ -89,7 +112,7 @@
               <p>Stage de 2 semaines chez l'agence web IZZI. Intégration d'un
                 site vitrine à partir d'une maquette graphique, sous Wordpress et
                 avec l'utilisation du theme personnalisé de l'entreprise permettant une grande
-                liberté et une intégration fidèle via le plugin Elementor (Wordpress - Elementor - Intégration).</p>
+                liberté et une intégration fidèle via le plugin Elementor (Wordpress - Elementor - découpage de la maquette via Illustrator).</p>
             </div>
           </li>
           <li class="experience-item">
@@ -148,6 +171,7 @@
       </section>
 
       <section id="about">
+        <h2>À PROPOS</h2>
         <div class="profile-pic">
           <img src="images/profile.jpg" alt="photo de profil">
         </div>
@@ -174,7 +198,7 @@
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
-    <script type="text/javascript" src="../js/navigation.js">
+    <script type="text/javascript" src="javascript/navigation.js">
     </script>
   </body>
 </html>

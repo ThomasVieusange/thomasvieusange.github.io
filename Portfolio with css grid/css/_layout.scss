@@ -15,6 +15,8 @@
 header{
   grid-area: header;
   height: 100vh;
+  min-height: 500px;
+  max-height: 800px;
 }
 
 #skills{
@@ -62,20 +64,22 @@ footer{
       grid-template-columns: 1fr 1fr;
       grid-template-areas:
         "header header"
-        "work experience"
-        "skills about"
-        "footer footer";
+        "skills skills"
+        "work work"
+        "experience experience"
+        "about footer";
   }
 }
 
 @media screen and (min-width: 769px){
   .grid{
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 2fr 1fr;
       grid-template-areas:
-        "header header header"
-        "work experience experience"
-        "skills skills about"
-        "footer footer footer";
+        "header header"
+        "skills skills"
+        "work work"
+        "experience about"
+        "experience footer";
   }
   #experience{
     grid-area: experience;
@@ -103,12 +107,12 @@ footer{
 
 @media screen and (min-width: 1441px){
   .grid{
-      margin: 0 80px;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding: 0 80px;
+      grid-template-columns: 3fr 1fr;
       grid-template-areas:
-      "header header header header"
-      "work work experience experience"
-      "skills skills about about"
-      "footer footer footer footer";
+      "header header"
+      "work skills"
+      "experience about"
+      "experience footer";
   }
 }

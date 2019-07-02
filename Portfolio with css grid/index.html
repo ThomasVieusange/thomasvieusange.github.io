@@ -7,6 +7,7 @@
     <meta name="keywords" content="développeur web, intégrateur web, portfolio, Thomas Vieusange">
     <meta name="author" content="Thomas Vieusange">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
   </head>
@@ -15,18 +16,15 @@
     <nav class="hide-nav">
       <a id="close-nav"><i class="fas fa-times fa-lg"></i></a>
       <a href="#"><i class="fas fa-home fa-lg"></i> Home</a>
-      <a href="#"><i class="fas fa-chart-pie fa-lg"></i> Compétences</a>
-      <a href="#"><i class="fas fa-briefcase fa-lg"></i> Réalisations</a>
-      <a href="#"><i class="fas fa-dove fa-lg"></i> Expérience</a>
-      <a href="#"><i class="far fa-address-card fa-lg"></i> À propos</a>
+      <a href="#skills"><i class="fas fa-chart-pie fa-lg"></i> Compétences</a>
+      <a href="#work"><i class="fas fa-briefcase fa-lg"></i> Réalisations</a>
+      <a href="#experience"><i class="fas fa-dove fa-lg"></i> Expérience</a>
+      <a href="#about"><i class="far fa-address-card fa-lg"></i> À propos</a>
       <!--<a href="#"><i class="fas fa-pen-fancy fa-lg"></i> Blog</a>-->
     </nav>
 
     <div id="burger">
       <i class="fas fa-bars fa-2x"></i>
-    </div>
-
-    <div class="back-to-top">
     </div>
 
     <div class="grid">
@@ -39,7 +37,7 @@
         <p>thomasvieusange@hotmail.fr</p>
         <p>06 17 23 65 57</p>
         <br>
-        <a href="#"><i class="fas fa-chevron-down fa-3x"></i></a>
+        <a href="#skills"><i class="fas fa-chevron-down fa-3x"></i></a>
       </header>
 <!-- I would like to make the web beautiful -->
       <section id="skills">
@@ -73,31 +71,85 @@
         <ul class="work-content">
 
           <li class="work-item">
-            <div class="work-item-thumbnail">
-              <img src="images/thumbnails/webagency.jpg" alt="image miniature du projet WebAgency">
-              <div class="work-item-overlay">
-                <a href="https://thomasvieusange.github.io/Web-Agency/" target="_blank">
-                  <div class="work-panel">
-                    <strong>Web Agency</strong>
-                    <p>Projet réalisé dans le cadre de ma formation sur Openclassrooms.com</p>
-                    <span>HTML5 CSS3 Flexbox</span>
-                  </div>
-                </a>
+            <img class="work-item-thumbnail" src="images/thumbnails/webagency.jpg" alt="image miniature du projet WebAgency">
+            <div class="work-item-overlay">
+              <h3>Web Agency</h3>
+              <p>Projet réalisé dans le cadre de ma formation sur Openclassrooms.com.</p>
+              <span>HTML5 - CSS3 - Flexbox - Responsive</span>
+              <div class="item-links">
+                <a href="https://thomasvieusange.github.io/Web-Agency/">Voir le projet <i class="fas fa-link fa-lg"></i></a>
+                <a href="https://github.com/ThomasVieusange/thomasvieusange.github.io/tree/master/Web-Agency">Voir le code <i class="far fa-file-code fa-lg"></i></a>
+              </div>
+            </div>
+          </li>
+
+          <li class="work-item">
+            <img class="work-item-thumbnail" src="images/thumbnails/Cuda.jpg" alt="image miniature du projet Cuda">
+            <div class="work-item-overlay">
+              <h3>Cuda</h3>
+              <p>Projet personnel.</p>
+              <span>HTML5 - CSS3 - Flexbox - Intégration</span>
+              <div class="item-links">
+                <a href="https://thomasvieusange.github.io/Cuda/">Voir le projet <i class="fas fa-link fa-lg"></i></a>
+                <a href="https://github.com/ThomasVieusange/thomasvieusange.github.io/tree/master/Cuda">Voir le code <i class="far fa-file-code fa-lg"></i></a>
+                <a href="https://github.com/ThomasVieusange/thomasvieusange.github.io/blob/master/Cuda/Cuda%20Single%20Page%20Portfolio/Cuda%20Single%20Page%20Portfolio.psd">Voir la maquette <i class="fas fa-paint-brush fa-lg"></i></a>
+              </div>
+            </div>
+          </li>
+
+          <li class="work-item">
+            <img class="work-item-thumbnail" src="images/thumbnails/strasbourgtourisme.jpg" alt="image miniature du projet Strasbourg tourisme">
+            <div class="work-item-overlay">
+              <h3>Strasbourg Tourisme</h3>
+              <p>Projet réalisé dans le cadre de ma formation sur Openclassrooms.com.</p>
+              <span>Wordpress - CSS3</span>
+              <div class="item-links">
+                <a href="http://strasbourgtourisme.thomasvieusange.ovh/">Voir le projet <i class="fas fa-link fa-lg"></i></a>
+              </div>
+            </div>
+          </li>
+
+          <li class="work-item">
+            <img class="work-item-thumbnail" src="images/thumbnails/weatherapp.jpg" alt="image miniature du projet Weatherapp">
+            <div class="work-item-overlay">
+              <h3>Weather App</h3>
+              <p>Projet réalisé en suivant le cursus freeCodeCamp.</p>
+              <span>HTML5 - CSS3 - Javascript - JQuery - freeCodeCamp API Météo</span>
+              <div class="item-links">
+                <a href="https://codepen.io/Thomas_Vieusange/pen/JMGXaK">Voir le projet <i class="fas fa-link fa-lg"></i></a>
+              </div>
+            </div>
+          </li>
+
+          <li class="work-item">
+            <img class="work-item-thumbnail" src="images/thumbnails/quotemachine.jpg" alt="image miniature du projet Random quote machine">
+            <div class="work-item-overlay">
+              <h3>Random Quote Machine</h3>
+              <p>Projet réalisé en suivant le cursus freeCodeCamp.</p>
+              <span>HTML5 - CSS3 - Javascript - Jquery - API forismatic.com</span>
+              <div class="item-links">
+                <a href="https://codepen.io/Thomas_Vieusange/pen/OOBMOa">Voir le projet <i class="fas fa-link fa-lg"></i></a>
+              </div>
+            </div>
+          </li>
+
+          <li class="work-item">
+            <img class="work-item-thumbnail" src="images/thumbnails/codepen.jpg" alt="image miniature codepen.io">
+            <div class="work-item-overlay">
+              <h3>CodePen</h3>
+              <p>Plus de projet sur mon CodePen</p>
+              <div class="item-links">
+                <a href="https://codepen.io/Thomas_Vieusange/">https://codepen.io/Thomas_Vieusange/ <i class="fas fa-link fa-lg"></i></a>
               </div>
             </div>
           </li>
 
         </ul>
-
-        CodePen (html css js api)
-        cuda (integration - flexbox)
-        strasbourg (wordpress)
-
       </section>
 
       <section id="experience">
         <h2>EXPÉRIENCE</h2>
-        <a class="download" href="files/CV_DevWeb.pdf" target="_blank" download>Télécharger mon CV</a>
+        <a class="link-CV" href="files/CV_DevWeb.pdf" target="_blank">Consulter mon CV</a>
         <ul class="experience-content">
           <li class="experience-item">
             <div class="experience-time-place">
@@ -111,7 +163,7 @@
               <h3>Stage Intégrateur Web</h3> - <strong><a href="https://www.izziweb.fr/">IZZI</a></strong>
               <p>Stage de 2 semaines chez l'agence web IZZI. Intégration d'un
                 site vitrine à partir d'une maquette graphique, sous Wordpress et
-                avec l'utilisation du theme personnalisé de l'entreprise permettant une grande
+                avec l'utilisation du thème personnalisé de l'entreprise permettant une grande
                 liberté et une intégration fidèle via le plugin Elementor (Wordpress - Elementor - découpage de la maquette via Illustrator).</p>
             </div>
           </li>
@@ -172,17 +224,26 @@
 
       <section id="about">
         <h2>À PROPOS</h2>
-        <div class="profile-pic">
-          <img src="images/profile.jpg" alt="photo de profil">
+        <div class="about-content">
+          <div class="profile-pic">
+            <img src="images/profile.jpg" alt="photo de profil">
+          </div>
+          <div class="about-me">
+            <p>Thomas Vieusange, 24 ans, je prépare le titre de <a href="http://www.rncp.cncp.gouv.fr/grand-public/visualisationFiche?format=fr&fiche=25468" target="_blank">Développeur/Intégrateur
+            en réalisation d'applications web</a> chez Openclassrooms.com et je recherche une opportunité professionnelle (stage, alternance). J'ai validé les <a href="https://diplome.3wa.fr/vieusange-thomas" target="_blank">trois premiers blocs de compétences</a> de mon diplôme et compte finir ma formation en alternance.</p>
+          </div>
         </div>
-        <p>Thomas Vieusange, 24 ans, je prépare le titre de <a href="http://www.rncp.cncp.gouv.fr/grand-public/visualisationFiche?format=fr&fiche=25468" target="_blank">Développeur/Intégrateur
-        en réalisation d'applications web</a> chez Openclassrooms.com et je recherche une opportunité professionnelle (stage, alternance). J'ai validé les <a href="https://diplome.3wa.fr/vieusange-thomas" target="_blank">trois premiers blocs de compétences</a> de mon diplôme et compte finir ma formation en alternance.</p>
       </section>
 
       <footer>
+        <div class="back-to-top">
+          <a href="#"><i class="fas fa-chevron-up fa-3x"></i></a>
+        </div>
         <a class="find-me-on" href="https://www.linkedin.com/in/thomas-vieusange-225863173/">LinkedIn</a>
         <a class="find-me-on" href="https://codepen.io/Thomas_Vieusange/">CodePen</a>
         <a class="find-me-on" href="https://github.com/ThomasVieusange">GitHub</a>
+        <p>thomasvieusange@hotmail.fr</p>
+        <p>06 17 23 65 57</p>
       </footer>
 
     </div><!--grid-->
@@ -190,7 +251,6 @@
     <!--
       https://openclassrooms.com/fr/paths/48-developpeur-web-junior/apprenticeshippdf
       https://www.alternance.emploi.gouv.fr/portail_alternance/jcms/gc_5504/simulateur-employeur?bsft_eid=4525f415-04ff-fb6f-0638-bc8f2e1f5659&utm_campaign=nl-career-services-22-26-02-2019&utm_source=blueshift&utm_medium=email&utm_content=nl-career-services-22-26-02-2019&bsft_clkid=5768aaa0-33d3-4c05-afea-17e0e1dd0106&bsft_uid=d6b7584b-a7ad-4226-9e9d-5b29e70a060f&bsft_mid=bd05b70b-8591-4f90-84e4-b9a993606185
-      https://codepen.io/beneggen/pen/aNbpXx?editors=1100
       https://www.freecodecamp.org/news/i-reviewed-fifty-portfolios-on-reddit-and-this-is-what-i-learned-e5d2b43150bc/
     -->
 
@@ -202,6 +262,3 @@
     </script>
   </body>
 </html>
-
-<!-- TODO: Animation hyperlien bordure du bas slide depuis la gauche -->
-<!-- TODO: rubrique entreprise -->
